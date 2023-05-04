@@ -1,0 +1,29 @@
+# Packet Mutator
+
+## Description
+
+Within this repository, a library is available which encompasses the necessary functionality to effectuate mutations of received packets from packetdrill. The library accommodates the following protocols:
+
+
+- User Datagram Protocol (UDP)
+- Transmission Control Protocol (TCP)
+- Internet Protocol version 4 (IPv4)
+- Internet Protocol version 6 (IPv6)
+
+
+The mutations that can be performed via this library are as follows:
+
+- Replacement: Modifying the value of a specific protocol's field.
+- Insertion: Adding a sequence of bytes at a designated position within the packet.
+- Truncation: Removing the final segment of a packet based on a given offset.
+
+
+## Build
+
+To build this library you have to run the following command:
+
+```
+make
+```
+
+This command create the object files that are needed for packetdrill
